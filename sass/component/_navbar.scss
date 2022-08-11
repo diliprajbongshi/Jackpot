@@ -1,0 +1,49 @@
+
+/*Home page navbar start*/
+.navbar-nav{
+    padding-top: 78px;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    @include nunito(20px,600,#944bff);
+    padding-left: 35px;
+    @include tran(all linear .4s);
+    
+}
+.navbar .navbar-nav .nav-item{
+  margin-right: 10px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    @include nunito(20px,600,#ff39dc);
+}
+.navbar .navbar-nav .nav-item .nav-link.active{
+   color: #ff39dc;
+}
+.head_btn{
+    margin-top:69px;
+}
+.head_btn_one{
+    @include anton(20px,#fff);
+    background:linear-gradient(  #ff39dc,#a60084 );
+    padding: 15px 30px;
+    text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+        @include tran( .4s);
+        @include rady(5px);
+        @include filter(0px 6px 0px #661355);
+    &:hover{
+        color: #570dc8;
+    }
+}
+.head_btn_two{
+    @include anton(20px,#fff);
+    background: linear-gradient(  #9e4efc,#570dc8 );
+    padding: 15px 35px;
+    text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.2);
+    @include tran( .4s);
+    @include rady(5px);
+    @include filter(0px 6px 0px #3a0090);
+    &:hover{
+        color: #ff39dc;
+    }
+}
+/*Home page navbar end*/

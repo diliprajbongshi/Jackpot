@@ -1,0 +1,36 @@
+#banner_last{
+    background: #150035;
+   padding-top: 90px;
+   padding-bottom: 97px;
+   position: relative;
+}
+.four_nav{
+    background: #0b001b;
+    padding-bottom: 40px;
+}
+.last_banner_pic_text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    @include tranformboth();
+    h3{
+        @include anton(70px,#fcb100);
+          text-transform: uppercase;
+          line-height: 80px;
+          text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+        span{
+        @include anton(90px,#fcb100);
+        }  
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+@mixin anton($fs,$col) {
+    font-family: 'Anton', sans-serif;
+    font-size: $fs;
+    font-weight: 400;
+    color: $col;
+}
+@mixin nunito($fs,$fw,$col) {
+    font-family: 'Nunito', sans-serif;
+    font-size: $fs;
+    font-weight: $fw;
+    color: $col;
+}
+@mixin tran($tran) {
+    transition: $tran;
+    -webkit-transition: $tran;
+    -moz-transition: $tran;
+    -ms-transition: $tran;
+    -o-transition: $tran;
+}
+@mixin  rady($rady) {
+    border-radius: $rady;
+    -webkit-border-radius: $rady;
+    -moz-border-radius: $rady;
+    -ms-border-radius: $rady;
+    -o-border-radius: $rady;
+}
+@mixin  filter($filter) {
+    filter: drop-shadow($filter);
+    -webkit-filter: drop-shadow($filter);
+}
+@mixin  gradient {
+    background: linear-gradient(yellow, red);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+}
+@mixin  seven {
+  
+background: rgba(249,214,123,1);
+background: -moz-linear-gradient(top, rgba(249,214,123,1) 0%, rgba(252,192,29,1) 50%, rgba(214,157,0,1) 51%, rgba(249,206,88,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,214,123,1)), color-stop(50%, rgba(252,192,29,1)), color-stop(51%, rgba(214,157,0,1)), color-stop(100%, rgba(249,206,88,1)));
+background: -webkit-linear-gradient(top, rgba(249,214,123,1) 0%, rgba(252,192,29,1) 50%, rgba(214,157,0,1) 51%, rgba(249,206,88,1) 100%);
+background: -o-linear-gradient(top, rgba(249,214,123,1) 0%, rgba(252,192,29,1) 50%, rgba(214,157,0,1) 51%, rgba(249,206,88,1) 100%);
+background: -ms-linear-gradient(top, rgba(249,214,123,1) 0%, rgba(252,192,29,1) 50%, rgba(214,157,0,1) 51%, rgba(249,206,88,1) 100%);
+background: linear-gradient(to bottom, rgba(249,214,123,1) 0%, rgba(252,192,29,1) 50%, rgba(214,157,0,1) 51%, rgba(249,206,88,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9d67b', endColorstr='#f9ce58', GradientType=0 );
+
+}
+@mixin  tranform {
+ transform: translateX(-50%);
+ -webkit-transform: translateX(-50%);
+ -moz-transform: translateX(-50%);
+ -ms-transform: translateX(-50%);
+ -o-transform: translateX(-50%);
+}
+@mixin  tranformboth {
+ transform: translate(-50%,-50%);
+ -webkit-transform: translate(-50%,-50%);
+ -moz-transform: translate(-50%,-50%);
+ -ms-transform: translate(-50%,-50%);
+ -o-transform: translate(-50%,-50%);
+}
+@mixin text_shad {
+    text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+}
+@mixin game {
+    box-shadow: 16px 1px 45px -3px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 11px 4px 14px -9px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 16px 1px 45px -3px rgba(0,0,0,0.42);
+}
+@mixin accor {
+    box-shadow: 0px 1px 0px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 0px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 0px 3px rgba(0,0,0,0.75);
+}
+@mixin game_two {
+    box-shadow: 11px 4px 14px 11px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 11px 4px 14px 11px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 11px 4px 14px 11px rgba(0,0,0,0.42);
+}
+@mixin drop_shad_one {
+    filter: drop-shadow(0 0mm 5mm rgb(160, 0, 210));
+    -webkit-filter: drop-shadow(0 0mm 5mm rgb(160, 0, 210));
+}
+@mixin head_one {
+    background: linear-gradient(#FCB100 49%,rgb(231, 139, 35) 0%  );
+
+    // background: -webkit-linear-gradient(to top, #E78B23 49%, #FCB100 0%);
+    // background: -moz-linear-gradient(to top, #E78B23 49%, #FCB100 0%);
+    // background: linear-gradient(to top, #E78B23 49%, #FCB100 0%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+
+}
+@mixin sign_fil {
+    filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+}
+
+
+// .plan_one_shadow{
+//     @include text_shad();
+// }

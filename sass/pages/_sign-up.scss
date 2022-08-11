@@ -1,0 +1,210 @@
+.sign{
+    background: #0b001b;
+    padding-top: 155px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.game_shad_two{
+    @include game_two();
+}
+.sign_first_part{
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -246px;
+    margin-bottom: 100px;
+    background: #6217d0;
+    // border-bottom: 5px solid #3a0090;
+   
+    .game_first_part_text{    
+      
+        h3{
+        @include anton(50px,#fcb100);
+        text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+        padding-top: 30px;
+        // @include sign_fil ();
+        }
+        h4{
+        @include anton(32px,#fff);
+        padding: 18px 0px;
+        text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+        }
+        p{
+        @include nunito(16px,400,#fff);
+        padding-bottom: 30px;
+        }
+    }
+}
+.sign_img{
+    width: 575px;
+    position: absolute;
+    top: 115px;
+    left: 35px;
+}
+.sing_text{
+    h3{
+        @include anton(28px,#fff);
+    }
+    p{
+        @include nunito(16px,400,#fff);
+      padding-top: 10px;
+      position: relative;
+      padding-bottom: 30px;
+      &::after{
+        position: absolute;
+        height: 5px;
+        width: 62px;
+        background: #fff;
+        content: '';
+        bottom: 5px;
+        left: 0;
+        @include rady(5px);
+      }
+    }
+}
+.f_name{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+     padding-top: 10px;
+    input{
+        background: transparent;
+        border: none ;
+        @include nunito(16px,400,#fff);
+        border-bottom: 1px solid #fff;
+        padding-bottom: 10px;
+    }
+    button{
+        background: transparent;
+        border: none ;
+        color: #fff;
+        font-size: 15px;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 10px;
+    }
+}
+.f_email{
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom: 1px solid #fff;
+     padding-top: 10px;
+    input{
+        background: transparent;
+        border: none ;
+        @include nunito(16px,400,#fff);
+        
+        padding-bottom: 10px;
+    }
+  
+    button{
+        background: transparent;
+        border: none ;
+        color: #fff;
+        font-size: 15px;
+        padding-bottom: 10px;
+        i{
+            position: absolute;
+            right: -436px;
+        }
+    }
+}
+.f_pass{
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom: 1px solid #fff;
+     padding-top: 10px;
+    input{
+        background: transparent;
+        border: none ;
+        @include nunito(16px,400,#fff);
+        
+        padding-bottom: 10px;
+    }
+  
+    button{
+        background: transparent;
+        border: none ;
+        color: #fff;
+        font-size: 15px;
+        padding-bottom: 10px;
+        i{
+            position: absolute;
+            right: -436px;
+        }
+    }
+}
+.sign_last{
+    background:linear-gradient(  #ff39dc,#a60084 );
+    @include rady(5px);
+    border-bottom: 4px solid #5c034a;
+    h3{
+        @include anton(20px,#fff);
+        padding: 14px 0px;
+       
+    }
+}
+.sign_last_two{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    .sign_last_text{
+        
+        p{
+            
+            padding-top: 10px;
+        @include nunito(16px,400,#fff);
+        }
+        span{
+            padding-top: 10px;
+        @include nunito(16px,400,#d31caf);
+        }
+    }
+    .sign_last_icon{
+        p{
+            margin-right: 20px;
+        @include nunito(16px,400,#fff);
+          display: inline-block;
+        }
+        a{
+            display: inline-block;
+           
+            i{
+                padding: 10px;
+             background:linear-gradient(  #ff39dc,#a60084 );
+             border-bottom: 4px solid #5c034a;
+               color: #fff;
+            }
+        }
+        .sign_face{
+              i{
+                  padding: 20px 30px;
+                  font-size: 20px;
+                margin-right: 10px;
+              }  
+        }
+        .sign_google{
+              i{
+                  background: linear-gradient( #9e4efc,#570dc8);
+                  border-bottom: 4px solid #2f0964;
+                  padding: 20px 25px;
+                  font-size: 20px;
+              }  
+        }
+
+    }
+}
+
+.sign_last_icon{
+    display: inline-block;
+    .sign_face i{
+     padding: 20px 15px;  
+    }
+}
+
+
+
+
+
+
+
+
+
+

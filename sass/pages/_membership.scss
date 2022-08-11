@@ -1,0 +1,49 @@
+.membership_plan{
+    
+    background: #0b001b;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.member_btn{
+    margin-bottom: 4px;
+    @include tran(.5s);
+   a{
+    @include anton(20px,#fff);
+   }
+    background:linear-gradient(  #ff39dc,#a60084 );
+    padding: 15px 30px;
+    text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.2);
+        @include tran( .4s);
+        @include filter(0px 6px 0px #661355);
+       opacity: 0;
+       visibility: hidden;
+}
+.member_item{
+    &:hover .member_btn {
+        margin-top:40px;
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover .head_btn_three{
+        background:linear-gradient(  #ff39dc,#a60084 );
+        @include filter(0px 6px 0px #661355);
+        // padding-bottom: 30px;
+        // margin-bottom: 30px;
+    }
+}
+.member_plan{
+    border-bottom: 5px solid #2e036e;
+    @include rady(5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+

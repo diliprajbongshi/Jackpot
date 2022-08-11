@@ -1,0 +1,593 @@
+/*Banner part start */
+#banner_one{
+    background: #150035;
+    padding-top: 260px;
+    padding-bottom: 240px;
+    position: relative;
+}
+.bann_one_img{
+    width: 600px;
+    position: absolute;
+    top: 170px;
+    left: 35px;
+}
+.banner_one_text{
+    h5{
+        @include nunito(20px,600,#fff);
+    }
+    h1{
+        @include anton(309px,#000);
+       padding-top: 30px; 
+       background: linear-gradient(#fcb100,#e58622);
+   
+    @include drop_shad_one();
+    @include head_one();
+    // text-shadow: 0px 0px 5px rgba(0,0,0,0.6);
+     
+    }
+    p{
+        @include nunito(16px,400,#fff);
+       text-align: center;
+       line-height: 26px;
+       padding-top: 20px;
+    }
+}
+.head_btn_three{
+    @include anton(20px,#fff);
+    background: linear-gradient(  #9e4efc,#570dc8 );
+    padding: 15px 30px;
+    text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.2);
+    @include tran( .4s);
+    @include rady(5px);
+    @include filter(0px 6px 0px #3a0090);
+    &:hover{
+        color: #ff39dc;
+    }
+}
+
+/*Banner part end */
+/*Game part start */
+#game{
+    position: relative;
+    background: #0b001b;
+    padding-top: 175px;
+    padding-bottom: 95px;
+   
+    .game_slider{
+        padding-top: 60px;
+    }
+}
+.game_head{
+    @include anton(48px,#fcb100);
+    text-shadow: -1px 0px 40px rgba(167,85,185,0.6);
+}
+.game_first_part{
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    margin-top: -246px;
+    margin-bottom: 100px;
+    background: #6217d0;
+    // background:linear-gradient(to right, #9e4efc , #570dc8);
+    // padding: 20px;
+    .game_first_part_text{  
+        // border-right: 1px solid red;
+        h3{
+            padding-top: 20px;
+        @include anton(50px,#fcb100);
+        text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+        }
+        h4{
+        @include anton(32px,#fff);
+        padding: 18px 0px;
+        text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+        }
+        p{
+        @include nunito(16px,400,#fff);
+        padding-bottom: 20px;
+        }
+    }
+}
+.game_shad{
+    @include game();
+}
+.game_one{
+    position: relative;
+    &:hover .game_overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+   .game_overlay{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background: rgba(21, 0, 53, 0.708);
+     top: 0;
+     left: 0;
+     opacity: 0;
+     visibility: hidden;
+    @include tran( .4s);
+
+     h4{
+        @include anton(24px,#fff);
+        padding-left: 115px;
+        padding-top: 194px;
+        margin-bottom: -22px;
+     }
+   }
+}
+.slick-slider .game_one {
+    margin: 0 10px;
+}
+/*Game part end */
+/*spin part start */
+#spin{
+    background: #150035;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.spin_one{
+    h3{
+        @include anton(48px,#fcb100);
+        text-shadow: -1px 0px 40px rgba(167,85,185,0.6);
+        padding-top: 75px;
+    }
+    p{
+        @include nunito(16px,400,#fff);
+        padding-top: 60px;
+        line-height: 26px;
+    }
+}
+/*spin part end */
+/*Plan part start */
+#plan{
+    background: #0b001b;
+    padding: 100px 0px;
+}
+.plan_one{
+    @include tran(all linear.5s);
+    position: relative;
+    @include rady(5px);
+    background: linear-gradient( #9e4efc,#570dc8);
+    .paln_one_part{
+        padding-top: 60px;
+        border-bottom: 1px solid #6328b5;
+        h5{
+            @include anton(32px,#fff);
+            text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+        }
+        h4{
+        @include nunito(50px,700,#fff);
+        padding-top: 27px;
+        padding-bottom: 14px;
+        }
+        h6{
+        @include nunito(14px,400,#fff);
+        padding-bottom: 28px;
+        }
+    }
+}
+.plan_top_btn{
+    margin-bottom: 4px;
+    @include tran(.5s);
+   a{
+    @include anton(20px,#fff);
+   }
+    background:linear-gradient(  #ff39dc,#a60084 );
+    padding: 15px 30px;
+    text-shadow: 4px 6px 2px rgba(0, 0, 0, 0.2);
+        @include tran( .4s);
+        // @include rady(5px);
+        @include filter(0px 6px 0px #661355);
+        opacity: 0;
+        visibility: hidden;
+}
+.plan_two_part{
+    @include tran(All linear.5s);
+    p{
+        @include nunito(14px,400,#fff);
+        line-height: 40px;
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+}
+.plan_one_btn{
+    @include tran( .4s);
+    @include tranform();
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+}
+// .plan_item{
+   
+//     &:hover {
+//         margin-top:40px;
+//     }
+   
+//     &:hover .head_btn_three{
+ 
+//     }
+// }
+.plan_item{
+    margin: 0 10px;
+}
+.slick-center {
+     .head_btn_three{
+        background:linear-gradient(  #ff39dc,#a60084 );
+        @include filter(0px 6px 0px #661355);
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+   .plan_top_btn{
+       margin-top: 30px;
+        opacity: 1;
+        visibility: visible;
+     }
+     .plan_one{
+         margin-bottom: 70px;
+     }
+     .plan_one_btn{
+         margin-bottom: -5px;
+     }
+}
+/*Plan part end */
+/*ask part start */
+#ask{
+    background: #150035;
+    padding: 100px 0px;
+}
+.ask_part{
+   
+    border-bottom: 1px solid #2c0a5b;
+    .ask_head{
+        
+        h3{
+            @include anton(48px,#fcb100);
+            @include drop_shad_one();
+            text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+            padding-bottom: 30px;
+            border-bottom: 2px solid #010001;
+        }
+    }
+}
+
+.accordion{
+    padding-top: 55px;
+}
+.accordion-button:not(.collapsed) {
+	color: #fff;
+    background-color: transparent;
+	box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+.accordion-body strong{
+    @include nunito(16px,400,#fff);
+}
+.accordion-button{
+    i{
+        position: absolute;
+        right: 50px;
+        top: 50%
+    }
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: transparent;
+	outline: 0;
+	box-shadow: none !important;
+}
+.accordion-button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 1rem 1.25rem;
+	font-size: 1rem;
+    color: #fff; 
+	text-align: left;
+	background-color: transparent; 
+	border: 1px solid transparent;
+	border-radius: 0;
+	overflow-anchor: none;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+}
+.accordion-item .accordion-header{
+    background: transparent;
+    border: none !important;
+}
+.accordion-item{
+    background: transparent !important;
+    border: none !important;
+}
+// .accordion-button:not(.collapsed)::before{
+//     @include down();
+// }
+.accordion-button:not(.collapsed)::after {
+	background-image: none !important;
+	transform: rotate(-180deg);
+}
+.accordion-button .collapsed i{
+    position: absolute;
+	transform: rotate(-180deg);
+    margin-left: 500px;
+}
+.accordion-button:not(.collapsed) {
+	color: #fff;
+	background-color: transparent;
+}
+
+.accordion-button::after {
+	flex-shrink: 0;
+	width: 1.25rem;
+	height: 1.25rem;
+	margin-left: auto;
+	content: "";
+	background-image: none !important;
+	background-repeat: no-repeat;
+	background-size: 1.25rem;
+	transition: transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::before {
+	background-image: none !important;
+}
+.accordion-button::before {
+	flex-shrink: 0;
+	width: 1.25rem;
+	height: 1.25rem;
+	/* margin-left: auto; */
+	content: "";
+	background-image: none !important;
+	background-repeat: no-repeat;
+	/* background-size: 1.25rem; */
+	/* transition: transform .2s ease-in-out; */
+}
+.accordion-button i{
+    position: absolute;
+	/* transform: rotate(-180deg); */
+    margin-left: 500px;
+    color: #fff;
+}
+.accordion-body {
+	width: 550px;
+	margin-left: 20px;
+}
+.accordion-button:not(.collapsed) i {
+	color: #fff;
+    transform: rotate(-180deg);
+}
+.ask_head_two{
+    h3{
+        @include anton(40px,#fcb100);
+        @include drop_shad_one();
+        padding-bottom: 38px;
+        text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+        border-bottom: 2px solid #010001;
+    }
+}
+.ask_two_counter{
+    padding-bottom: 20px;
+    display: flex;
+    .ask_count{
+        @include rady(5px);
+        border: 1px solid #fcb100;
+        padding: 4px;
+        margin-left: 20px;
+        margin-top: 15px;
+        h3{
+        @include nunito(20px,600,#fcb100);
+        padding: 4px;
+        }
+        h4{
+        @include nunito(24px,600,#fcb100);  
+        } 
+    }
+}
+// .accordion .accordion-item #headingOne .accordion-button .collapsed{
+//     border: 1px solid red;
+// }
+// .apple .collapsed{
+//     border: 1px solid red;
+// }
+
+.scrool{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 300px;
+}
+.ask_two_counter{
+    .counter_two{
+        h3{
+            @include nunito(20px,600,#fcb100);
+            padding: 7px;
+        }
+    }
+}
+.ask_two_counter{
+    .counter_three{
+        h3{
+            @include nunito(20px,600,#fcb100);
+            padding: 7px;
+        }
+    }
+}
+.ask_two_counter_text{
+    padding-top: 30px;
+    h4{
+        @include nunito(20px,600,#fff);
+         padding-right: 31px;
+    }
+}
+.country_slide{
+    position: relative;
+}
+.country_slide::before {
+	position: absolute;
+	content: '';
+	width: 451px;
+	height: 1px;
+	background: #2c0a5b;
+	bottom: -6px;
+	left: 11px;
+}
+.country_slide::after {
+	position: absolute;
+	content: '';
+	width: 452px;
+	height: 2px;
+	background: #000;
+	bottom: -5px;
+	left: 11px;
+}
+.count_item_one{
+    padding-bottom: 10px;
+    // border-bottom: 2px solid #010001;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    .country_people{
+        h4{
+            @include nunito(16px,400,#fff);
+            padding-left: 2px;
+        } 
+    }
+   .coun_img{
+       margin-top: -5px;
+   }
+    .country_price{
+      text-align: right;
+      h4{
+        @include nunito(16px,400,#fff);
+      }
+    }
+}
+/*ask part end */
+/*payment part start */
+#payment{
+    background: linear-gradient(  #9e4efc,#570dc8 );
+    padding-top: 33px;
+    padding-bottom: 30px;
+}
+.payment_fast{
+    @include anton(32px,#fff);
+    text-shadow: 2px 4px 2px rgba(0,0,0,0.6);
+
+}
+.email{
+    border: 1px solid #3a0090;
+     margin-top: 30px;  
+}
+.email input{
+    padding: 5px 0px;
+    padding-left: 15px;
+    padding-right: 295px;
+    background: transparent;
+    border: transparent;
+    @include nunito(14px,400,#3a0090);
+
+}
+.email button{
+ 
+       padding: 5px 10px;
+        background: transparent;
+        border: transparent;
+        border-left:1px solid #3a0090 ;
+        i{
+            font-size: 30px;
+            color: #3a0090;
+        }
+}
+.method_one{
+    margin-top: 35px;
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+/*payment part end */
+/*Footer part start*/
+#footer{
+    background: #0b001b;
+    padding-top: 57px;
+    padding-bottom:70px;
+    border-top: 6px solid #3a0090;
+}
+.footer_one{
+  p{
+    @include nunito(16px,200,#fff);
+    line-height: 26px;
+    padding-top: 28px;
+  }
+}
+.footer_common{
+    h3{
+        @include anton(32px,#fff);
+        }
+}
+.footer_icons{
+    margin-top: 38px;
+    a{
+        display: inline-block;
+        i{
+            margin-right: 10px;
+            padding: 10px 20px;
+            background: linear-gradient(  #9e4efc,#570dc8 );
+            @include filter(0px 6px 0px #3a0090);
+            color: #fff;
+            font-size: 22px;
+        }
+    }
+}
+.footer_icons{
+    .twitter i{
+     padding: 10px 16px;
+    }
+    .google i{
+    background:linear-gradient(  #ff39dc,#a60084 );
+    @include filter(0px 6px 0px #661355);
+
+     padding: 10px 16px;
+    }
+    .pin i{
+     padding: 10px 16px;
+    }
+}
+.footer_text_one{
+    padding-top: 20px;
+    h3{
+    @include nunito(16px,600,#fff);
+    line-height: 40px;
+    }
+}
+.footer_two_text{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_three{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_three_text{
+    padding-top: 30px;
+    h3{
+    @include nunito(16px,600,#fff);
+     margin-right: 100px;
+    }
+}
+.ftanother{
+    h3{
+        margin-right: 125px;
+    }
+}
+/*Footer part end */
+/*last_footer part start */
+#last_footer{
+    background: #0b001b;
+    padding-top: 17px;
+    padding-bottom:20px;
+    border-top: 1px solid #290a59;
+}
+.last_footer{
+    p{
+    @include nunito(16px,400,#fff);
+
+    }
+}
+/*last_footer part end */
